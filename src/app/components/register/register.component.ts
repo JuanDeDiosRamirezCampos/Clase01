@@ -3,22 +3,22 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'],
+  styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  email: string;
-  password: string;
-  passwordConfirm: string;
+  email:string; //Captura de email
+  password:string;  //Captura de password
+  confirmPassword:string;
 
-  constructor() {
+  constructor() { //Inicializar los dos atributos
     this.email = '';
-    this.password = '';
-    this.passwordConfirm = '';
+    this.password = ''
+    this.confirmPassword = '';
   }
 
-  register() {
-    console.log(this.email);
-    console.log(this.password);
-    console.log(this.passwordConfirm);
+  register() {  //Función para evento clic
+    console.log('Email: ' + this.email);
+    console.log('Password: ' + this.password);
+    console.log('Confirm Password: ' + this.confirmPassword);
   }
 }
